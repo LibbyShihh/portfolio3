@@ -1,0 +1,111 @@
+.h1{
+    font-size: 80px;
+    line-height: 28px;
+    font-family: 微軟正黑體;
+}
+
+
+/* Basic */
+.inner {
+    margin: 0 auto;
+    max-width: 65em;
+}
+
+    
+/* Type */
+p {
+    margin: 0 0 2em 0;
+}
+
+
+
+
+/* Box */
+.box {
+    border-radius: 4px;
+    border: solid 1px #dee1e3;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+
+    
+
+    .box .image.fit {
+        margin: 0;
+    }
+
+    .box .content {
+        padding: 1.5em;
+    }
+
+    .box.alt {
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+
+
+/* Image */
+
+        .image.fit img {
+            width: 100%;
+        }
+
+    
+
+
+/* Flex */
+
+/* 圖片兩欄 */
+.flex {
+    display: -ms-flexbox;
+    -ms-flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    -ms-flex-align: stretch;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -moz-align-items: stretch;
+    -webkit-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+}
+
+    .flex.flex-3 .flex-item {
+        -ms-flex: 0 1 auto;
+        -ms-flex-preferred-size: 30%;
+        -moz-flex-basis: 30%;
+        -webkit-flex-basis: 30%;
+        -ms-flex-basis: 30%;
+        flex-basis: 30%;
+    }
+
+        
+
+    @media screen and (max-width: 980px) {
+
+        .flex {
+            -ms-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+    }
+
+/* Wrapper */
+
+.wrapper {
+    padding: 6em 0 4em 0;
+}
+
